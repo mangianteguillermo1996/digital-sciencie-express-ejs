@@ -1,0 +1,7 @@
+<%- include('partials/header', { title }) %>
+<% if (nombre) { %>
+  <h2><%= nombre %></h2>
+<% } %>
+<p><%= mensaje %></p>
+<p><a href="/heroes">Volver al listado</a></p>
+<%- include('partials/footer') %>

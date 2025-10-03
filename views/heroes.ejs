@@ -1,0 +1,12 @@
+<%- include('partials/header', { title }) %>
+<h1>Listado de científicos</h1>
+<ul>
+  <% scientists.forEach(s => { %>
+    <li>
+      <a href="/heroes/detalle/id/<%= s.id %>"><%= s.nombre %></a>
+      · <a href="/heroes/bio/id/<%= s.id %>/ok">ver bio</a>
+    </li>
+  <% }) %>
+</ul>
+<p><a href="/">Volver al inicio</a></p>
+<%- include('partials/footer') %>
